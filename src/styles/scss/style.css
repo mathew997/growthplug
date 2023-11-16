@@ -1,0 +1,182 @@
+@charset "UTF-8";
+:root {
+  --ff-primary: "Inter", sans-serif;
+  --ff-secondary: "Roboto Slab", serif;
+  --clr-white: #ffffff;
+  --clr-white-100: #fcfcfc;
+  --clr-black: #444444;
+  --clr-brand: #268ccc;
+}
+
+nav .menu-icon {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+}
+nav .menu-icon::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: var(--clr-white, #fff);
+  width: 2rem;
+  left: 0;
+  top: 0.5rem;
+  transition: all ease-in-out 0.3s;
+}
+nav .menu-icon::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: var(--clr-white, #fff);
+  width: 2rem;
+  top: 1.5rem;
+  transition: all ease-in-out 0.3s;
+}
+
+.show nav .menu-icon::before {
+  transform: translateY(8px) rotate(45deg);
+}
+.show nav .menu-icon::after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul.menu {
+    display: none;
+    flex-direction: column;
+  }
+  nav ul.menu li.dropdown .dropdown-menu {
+    position: static;
+    display: none;
+  }
+  .show .menu {
+    display: flex;
+  }
+}
+body {
+  font-family: var(--ff-primary);
+  color: var(--clr-black);
+}
+
+.banner {
+  background-image: url(/src/assests/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.banner .banner-text {
+  font-family: var(--ff-secondary);
+}
+
+.show-case {
+  background: linear-gradient(180deg, #3493cb 0.1%, rgba(255, 255, 255, 0) 110.64%);
+}
+.show-case .card {
+  transition: all ease-in-out 0.3s;
+}
+.show-case .card h2 {
+  color: var(--clr-brand, #3493cb);
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+}
+.show-case .card:hover {
+  transform: translateY(-1rem);
+}
+
+.about-us .text-wrapper h3 {
+  font-family: var(--ff-secondary);
+}
+
+.about-doctor .header {
+  font-family: var(--ff-secondary);
+  color: var(--clr-brand, #3493cb);
+}
+.about-doctor .text-wrapper h4 {
+  font-family: var(--ff-secondary);
+}
+
+.logos img {
+  height: 3rem;
+}
+
+.services {
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, #cfe3f2 100%);
+}
+.services .header {
+  font-family: var(--ff-secondary);
+  color: var(--clr-brand, #3493cb);
+}
+.services .service-card .icon {
+  border: solid 2px var(--clr-brand, #3493cb);
+  transition: all ease-in-out 0.3s;
+}
+.services .service-card .icon svg {
+  height: 5rem;
+  fill: var(--clr-white, #fff);
+}
+.services .service-card .icon:hover {
+  background-color: var(--clr-white, #fff);
+}
+.services .service-card .icon:hover svg {
+  fill: var(--clr-brand, #3493cb);
+}
+.services .service-card .service-title {
+  color: var(--clr-brand, #3493cb);
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reviews .header {
+  font-family: var(--ff-secondary);
+  color: var(--clr-brand, #3493cb);
+}
+.reviews .review-text::after {
+  content: "“";
+  position: absolute;
+  left: -2rem;
+  top: -2rem;
+  font-size: 5rem;
+  color: #bbbbbb;
+}
+.reviews .review-text svg {
+  display: inline;
+}
+
+.splide__pagination {
+  bottom: -1.5em !important;
+}
+
+.insurance-info .text-wrapper h4,
+.insurance-info .text-wrapper button {
+  font-family: var(--ff-secondary);
+  color: var(--clr-brand, #3493cb);
+}
+
+.gallery .header {
+  font-family: var(--ff-secondary);
+  color: var(--clr-brand, #3493cb);
+}
+.gallery .gallery-card img {
+  transition: all ease-in-out 0.3s;
+}
+.gallery .gallery-card img:hover {
+  scale: 1.2;
+}
+
+.footer h5 {
+  text-transform: uppercase;
+  font-family: var(--ff-secondary);
+}
+
+.copyright .social-links svg {
+  height: 1rem;
+}/*# sourceMappingURL=style.css.map */

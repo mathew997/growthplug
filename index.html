@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description about the page" />
+    <title>Home</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="src/styles/scss/style.css" />
+    <link rel="stylesheet" href="utility.css" />
+
+    <!-- slider css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <header class="header-logo hidden lg:block">
+      <div class="h-16 py-3">
+        <img src="src/assests/logo.png" alt="Logo" class="h-full mx-auto" />
+      </div>
+    </header>
+    <!-- Navigation -->
+    <header
+      class="header | px-4 lg:px-6 text-white bg-[#268ccc] py-4"
+      id="menu"
+    >
+      <nav
+        class="container mx-auto flex items-start lg:items-center justify-between flex-col lg:flex-row"
+      >
+        <div class="flex items-center justify-between w-full lg:hidden">
+          <div class="logo | h-8">
+            <img
+              src="src/assests/logo.png"
+              alt="Logo image"
+              class="h-full lg:hidden"
+            />
+          </div>
+          <div class="menu-icon | lg:hidden" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <ul
+          class="menu | flex gap-4 lg:gap-8 lg:items-center mt-2 lg:mt-0 pt-2 lg:pt-0 border-t lg:border-0 w-full lg:w-auto mx-auto"
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our practice</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#" class="block py-2 px-4 bg-[#444444] w-fit"
+              >Request an appointment</a
+            >
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner | relative">
+      <div class="container mx-auto h-screen flex items-center justify-center">
+        <div class="text-wrapper max-w-2xl relative z-[1] text-white">
+          <h1 class="banner-text | text-2xl lg:text-5xl uppercase text-center">
+            Creating Unforgettable smiles
+          </h1>
+
+          <p class="text-center font-semibold mt-5 text-2xl">Memphis, TN</p>
+
+          <a
+            href=""
+            class="cta | block p-5 text-white font-semibold border-2 border-white w-fit mx-auto mt-5 lg:mt-8 hover:bg-white hover:text-black transition-all ease-in-out duration-300"
+            >Request an appointment</a
+          >
+
+          <div
+            class="social-links | flex gap-3 items-center justify-center mt-4 lg:mt-6"
+          >
+            <a href="">
+              <svg width="30" height="30" viewBox="0 0 1792 1792" fill="#fff">
+                <title>Google icon</title>
+                <path
+                  d="M896 786h725q12 67 12 128 0 217-91 387.5t-259.5 266.5-386.5 96q-157 0-299-60.5t-245-163.5-163.5-245-60.5-299 60.5-299 163.5-245 245-163.5 299-60.5q300 0 515 201l-209 201q-123-119-306-119-129 0-238.5 65t-173.5 176.5-64 243.5 64 243.5 173.5 176.5 238.5 65q87 0 160-24t120-60 82-82 51.5-87 22.5-78h-436v-264z"
+                ></path>
+              </svg>
+            </a>
+
+            <a href="">
+              <svg width="30" height="30" viewBox="0 0 1792 1792" fill="#fff">
+                <title>Facebook icon</title>
+                <path
+                  d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"
+                ></path>
+              </svg>
+            </a>
+
+            <a href="">
+              <svg width="30" height="30" viewBox="0 0 1792 1792" fill="#fff">
+                <title>Twitter icon</title>
+                <path
+                  d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"
+                ></path>
+              </svg>
+            </a>
+
+            <a href="">
+              <svg width="30" height="30" viewBox="0 0 1792 1792" f fill="#fff">
+                <title>YouTube icon</title>
+                <path
+                  d="M711 1128l484-250-484-253v503zm185-862q168 0 324.5 4.5t229.5 9.5l73 4q1 0 17 1.5t23 3 23.5 4.5 28.5 8 28 13 31 19.5 29 26.5q6 6 15.5 18.5t29 58.5 26.5 101q8 64 12.5 136.5t5.5 113.5v176q1 145-18 290-7 55-25 99.5t-32 61.5l-14 17q-14 15-29 26.5t-31 19-28 12.5-28.5 8-24 4.5-23 3-16.5 1.5q-251 19-627 19-207-2-359.5-6.5t-200.5-7.5l-49-4-36-4q-36-5-54.5-10t-51-21-56.5-41q-6-6-15.5-18.5t-29-58.5-26.5-101q-8-64-12.5-136.5t-5.5-113.5v-176q-1-145 18-290 7-55 25-99.5t32-61.5l14-17q14-15 29-26.5t31-19.5 28-13 28.5-8 23.5-4.5 23-3 17-1.5q251-18 627-18z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Show case -->
+    <section class="show-case | py-14 px-4 lg:px-16">
+      <div class="container mx-auto">
+        <div
+          class="cards | grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+        >
+          <a href="#" class="card | bg-white rounded-md p-4 lg:p-8 shadow-md">
+            <h2 class="text-2xl mb-4 text-center">Online forms</h2>
+
+            <img
+              src="src/assests/1.png"
+              alt="Image of couple looking a tablet"
+            />
+          </a>
+
+          <a href="#" class="card | bg-white rounded-md p-4 lg:p-8 shadow-md">
+            <h2 class="text-2xl mb-4 text-center">Meet Dr. Wills</h2>
+
+            <img src="src/assests/2.png" alt="Image of Dr. Wills" />
+          </a>
+
+          <a href="#" class="card | bg-white rounded-md p-4 lg:p-8 shadow-md">
+            <h2 class="text-2xl mb-4 text-center">Patient review</h2>
+
+            <img src="src/assests/3.png" alt="Image of a family" />
+          </a>
+
+          <a href="#" class="card | bg-white rounded-md p-4 lg:p-8 shadow-md">
+            <h2 class="text-2xl mb-4 text-center">Fun time photos</h2>
+
+            <img src="src/assests/4.png" alt="Image of staffs" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about-us | py-14 px-4 lg:px-10">
+      <div class="container mx-auto">
+        <h3 class="text-lg lg:text-2xl text-[#268ccc] text-center">
+          Your Dentist in Memphis, TN, and Surrounding Areas of Mississippi and
+          Arkansas
+        </h3>
+
+        <div
+          class="content-wrapper | mt-4 lg:mt-12 flex gap-4 lg:gap-6 flex-col lg:flex-row"
+        >
+          <div class="image-wrapper flex-[1.5]">
+            <img
+              src="src/assests/about-image.png"
+              alt="Image of a sea"
+              loading="lazy"
+              class="w-full"
+            />
+          </div>
+          <div class="text-wrapper | flex-[2]">
+            <h3 class="text-lg lg:text-3xl text-center">
+              Welcome to our practice Dr. J. Whitley Wills
+            </h3>
+
+            <p class="mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor
+              reprehenderit voluptate sed neque commodi officiis, error
+              molestiae reiciendis architecto sapiente quibusdam cumque
+              excepturi enim facilis culpa ullam, dolores sunt pariatur quo
+              nobis voluptatem tempore libero repudiandae! Facilis architecto
+              deleniti odio vel consequatur, quam, voluptatem sapiente
+              consequuntur doloribus ratione aliquid amet animi molestias
+              voluptatibus libero quidem adipisci, consectetur quaerat
+              blanditiis cum fugit ducimus nam. Laborum ipsum blanditiis
+              repudiandae minus voluptatum placeat aliquam id modi optio nisi
+              voluptatibus illum culpa, harum distinctio ad minima assumenda
+              aperiam inventore consequatur exercitationem alias architecto?
+              Enim vel error amet accusamus. Unde numquam ducimus, dicta nisi,
+              distinctio cum reiciendis quia minus culpa cupiditate repudiandae
+              deserunt commodi facere. Eius ratione sapiente tenetur consequatur
+              magnam saepe, voluptate iusto, ea velit laboriosam quam illum esse
+              quaerat, dicta vitae eveniet suscipit id mollitia? Impedit, quo
+              animi? Repellat odit ipsum placeat quisquam unde doloremque
+              adipisci, debitis inventore, eaque sunt, dolorum nesciunt eveniet
+              consectetur odio!
+            </p>
+
+            <a
+              href="#"
+              class="capitalize flex w-fit py-3 px-4 border-2 border-[#268ccc] text-[#268ccc] mx-auto mt-5 hover:bg-[#268ccc] hover:text-white transition-all ease-in-out duration-300"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- meet the doc -->
+    <section class="about-doctor | py-14 px-4 lg:px-10">
+      <div class="container mx-auto">
+        <h3 class="header | text-xl lg:text-3xl text-center uppercase mb-6">
+          Meet the doctor
+        </h3>
+        <div class="grid gap-4 grid-cols-1 lg:grid-cols-2">
+          <div class="text-wrapper py-4 lg:py-12 px-5 bg-sky-200 rounded-md">
+            <h4 class="text-2xl text-clip uppercase text-center">
+              Dr. Whitley Wills, DDS
+            </h4>
+            <p class="mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              praesentium, nihil necessitatibus odio sequi tenetur? Maiores enim
+              debitis nulla ratione doloribus. Illum quasi quos laboriosam quis
+              eum enim amet aliquid quisquam nisi fuga voluptas fugiat
+              asperiores, incidunt beatae magni aut rerum dolorem non laudantium
+              corporis ipsa excepturi molestias minima? Est qui earum aliquid
+              doloribus beatae dolor temporibus saepe quas. Vero quidem
+              explicabo consequatur cumque, mollitia inventore distinctio magni
+              fuga, voluptates culpa veritatis exercitationem! Ipsam quia quis
+              dolorum magnam doloribus, saepe placeat deserunt possimus dolore,
+              asperiores aliquam, libero provident voluptatem pariatur
+              temporibus tempore sint deleniti fugit quasi vitae? Laboriosam
+              laudantium, rerum voluptatum sed praesentium sint deserunt libero
+              omnis voluptatibus expedita architecto, odit optio dolorum qui
+              vero enim velit facilis quaerat nisi doloremque hic possimus illo
+              numquam veniam. Non veniam illum soluta doloribus. Quod esse
+              possimus consectetur recusandae sed laboriosam nemo dignissimos
+              similique? Adipisci possimus architecto recusandae, at nisi
+              cupiditate temporibus fugit.
+            </p>
+          </div>
+          <div class="image-wrapper m-auto">
+            <img src="src/assests/doc-image.png" alt="image of Doctor Wills" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- logos -->
+    <section class="logos | py-6 px-4 lg:px-6">
+      <div class="container mx-auto">
+        <div class="flex gap-6 justify-center flex-wrap">
+          <img src="src/assests/logos/1.png" alt="Logo" loading="lazy" />
+          <img src="src/assests/logos/2.png" alt="Logo" loading="lazy" />
+          <img src="src/assests/logos/3.png" alt="Logo" loading="lazy" />
+          <img src="src/assests/logos/4.png" alt="Logo" loading="lazy" />
+          <img src="src/assests/logos/5.png" alt="Logo" loading="lazy" />
+          <img src="src/assests/logos/6.png" alt="Logo" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="services | py-14 px-4 lg:px-10">
+      <div class="container mx-auto">
+        <h3 class="header | text-xl lg:text-3xl text-center uppercase mb-6">
+          Services
+        </h3>
+
+        <div
+          class="service-items | flex gap-4 lg:gap-10 justify-center flex-wrap lg:flex-nowrap max-w-6xl mx-auto"
+        >
+          <div class="service-card | flex flex-col items-center">
+            <span
+              class="icon | bg-[#268ccc] flex items-center justify-center h-24 w-24 lg:h-40 lg:w-40 aspect-square rounded-full"
+            >
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.5592 3.1258C15.7585 2.9692 24.0804 -3.50485 29.5808 2.8727C32.6004 6.3739 32.3444 10.0063 31.2239 13.5635L27.2816 24.8565C26.1289 28.783 25.307 29.9951 23.2874 31.701C22.0886 32.7135 20.7366 30.9646 19.3138 29.1239C18.0812 27.5293 16.7954 25.8658 15.5098 25.8697C14.203 25.8737 12.8965 27.5398 11.6465 29.1338C10.2048 30.9724 8.8383 32.715 7.6331 31.701C5.1996 29.6532 4.1324 26.8237 3.0169 22.2829C2.8022 21.4087 2.4755 20.3602 2.1153 19.2039C0.604448 14.3544 -1.49722 7.6083 1.58534 3.8657C5.3919 -0.755813 10.12 -1.49979 15.5088 3.0887L15.5592 3.1258ZM12.9001 3.6004C11.0357 2.3193 9.4509 1.91183 8.1308 2.0157C6.5088 2.1432 4.8241 3.0794 3.1291 5.1373C1.85439 6.6849 1.72465 9.2994 2.4119 12.7151C2.7392 14.3418 3.2167 15.9892 3.6976 17.5539C3.8013 17.8915 3.9067 18.2298 4.0112 18.565C4.3755 19.7341 4.7283 20.8661 4.9592 21.8058C5.9804 25.9629 6.8687 28.1971 8.48 29.7712C8.8126 29.4619 9.2333 28.965 9.7899 28.2597C9.8766 28.1497 9.9666 28.0348 10.0593 27.9164C10.6295 27.1885 11.3048 26.3262 11.9937 25.6369C12.7255 24.9047 13.9352 23.8745 15.5038 23.8697C17.0796 23.8649 18.2861 24.9118 19.003 25.6389C19.6819 26.3276 20.3478 27.1901 20.9098 27.918C21.0017 28.037 21.0908 28.1524 21.1767 28.2629C21.7219 28.9638 22.1349 29.4586 22.4615 29.7681C23.1093 29.1824 23.5294 28.6934 23.8929 28.0853C24.3622 27.3003 24.7993 26.2118 25.3626 24.2931C25.372 24.2609 25.3823 24.229 25.3934 24.1973L29.3253 12.934C29.8394 11.2943 30.1005 9.797 29.9642 8.3899C29.8315 7.0193 29.3116 5.6229 28.0662 4.1789C26.0017 1.78507 23.4653 1.74886 21.0724 2.4904C19.8673 2.8638 18.7857 3.42 17.9936 3.8956C17.6964 4.074 17.4459 4.2375 17.2515 4.3701L21.0925 7.1943C21.5374 7.5215 21.6329 8.1474 21.3057 8.5923C20.9786 9.0373 20.3526 9.1328 19.9077 8.8056L14.4829 4.8168C14.4078 4.769 14.3352 4.7158 14.2657 4.6571L13.1076 3.8056C13.0267 3.7461 12.9574 3.6768 12.9001 3.6004ZM8.1293 30.0449L8.1332 30.043C8.1305 30.0443 8.1293 30.0449 8.1293 30.0449Z"
+                  fill="bcurrentColor"
+                />
+              </svg>
+            </span>
+            <h4 class="service-title | text-lg mt-5">Implant dentistry</h4>
+          </div>
+
+          <div class="service-card | flex flex-col items-center">
+            <span
+              class="icon | bg-[#268ccc] flex items-center justify-center h-24 w-24 lg:h-40 lg:w-40 aspect-square rounded-full"
+            >
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.5592 3.1258C15.7585 2.9692 24.0804 -3.50485 29.5808 2.8727C32.6004 6.3739 32.3444 10.0063 31.2239 13.5635L27.2816 24.8565C26.1289 28.783 25.307 29.9951 23.2874 31.701C22.0886 32.7135 20.7366 30.9646 19.3138 29.1239C18.0812 27.5293 16.7954 25.8658 15.5098 25.8697C14.203 25.8737 12.8965 27.5398 11.6465 29.1338C10.2048 30.9724 8.8383 32.715 7.6331 31.701C5.1996 29.6532 4.1324 26.8237 3.0169 22.2829C2.8022 21.4087 2.4755 20.3602 2.1153 19.2039C0.604448 14.3544 -1.49722 7.6083 1.58534 3.8657C5.3919 -0.755813 10.12 -1.49979 15.5088 3.0887L15.5592 3.1258ZM12.9001 3.6004C11.0357 2.3193 9.4509 1.91183 8.1308 2.0157C6.5088 2.1432 4.8241 3.0794 3.1291 5.1373C1.85439 6.6849 1.72465 9.2994 2.4119 12.7151C2.7392 14.3418 3.2167 15.9892 3.6976 17.5539C3.8013 17.8915 3.9067 18.2298 4.0112 18.565C4.3755 19.7341 4.7283 20.8661 4.9592 21.8058C5.9804 25.9629 6.8687 28.1971 8.48 29.7712C8.8126 29.4619 9.2333 28.965 9.7899 28.2597C9.8766 28.1497 9.9666 28.0348 10.0593 27.9164C10.6295 27.1885 11.3048 26.3262 11.9937 25.6369C12.7255 24.9047 13.9352 23.8745 15.5038 23.8697C17.0796 23.8649 18.2861 24.9118 19.003 25.6389C19.6819 26.3276 20.3478 27.1901 20.9098 27.918C21.0017 28.037 21.0908 28.1524 21.1767 28.2629C21.7219 28.9638 22.1349 29.4586 22.4615 29.7681C23.1093 29.1824 23.5294 28.6934 23.8929 28.0853C24.3622 27.3003 24.7993 26.2118 25.3626 24.2931C25.372 24.2609 25.3823 24.229 25.3934 24.1973L29.3253 12.934C29.8394 11.2943 30.1005 9.797 29.9642 8.3899C29.8315 7.0193 29.3116 5.6229 28.0662 4.1789C26.0017 1.78507 23.4653 1.74886 21.0724 2.4904C19.8673 2.8638 18.7857 3.42 17.9936 3.8956C17.6964 4.074 17.4459 4.2375 17.2515 4.3701L21.0925 7.1943C21.5374 7.5215 21.6329 8.1474 21.3057 8.5923C20.9786 9.0373 20.3526 9.1328 19.9077 8.8056L14.4829 4.8168C14.4078 4.769 14.3352 4.7158 14.2657 4.6571L13.1076 3.8056C13.0267 3.7461 12.9574 3.6768 12.9001 3.6004ZM8.1293 30.0449L8.1332 30.043C8.1305 30.0443 8.1293 30.0449 8.1293 30.0449Z"
+                  fill="bcurrentColor"
+                />
+              </svg>
+            </span>
+            <h4 class="service-title | text-lg mt-5">Glo teeth whitening</h4>
+          </div>
+
+          <div class="service-card | flex flex-col items-center">
+            <span
+              class="icon | bg-[#268ccc] flex items-center justify-center h-24 w-24 lg:h-40 lg:w-40 aspect-square rounded-full"
+            >
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.5592 3.1258C15.7585 2.9692 24.0804 -3.50485 29.5808 2.8727C32.6004 6.3739 32.3444 10.0063 31.2239 13.5635L27.2816 24.8565C26.1289 28.783 25.307 29.9951 23.2874 31.701C22.0886 32.7135 20.7366 30.9646 19.3138 29.1239C18.0812 27.5293 16.7954 25.8658 15.5098 25.8697C14.203 25.8737 12.8965 27.5398 11.6465 29.1338C10.2048 30.9724 8.8383 32.715 7.6331 31.701C5.1996 29.6532 4.1324 26.8237 3.0169 22.2829C2.8022 21.4087 2.4755 20.3602 2.1153 19.2039C0.604448 14.3544 -1.49722 7.6083 1.58534 3.8657C5.3919 -0.755813 10.12 -1.49979 15.5088 3.0887L15.5592 3.1258ZM12.9001 3.6004C11.0357 2.3193 9.4509 1.91183 8.1308 2.0157C6.5088 2.1432 4.8241 3.0794 3.1291 5.1373C1.85439 6.6849 1.72465 9.2994 2.4119 12.7151C2.7392 14.3418 3.2167 15.9892 3.6976 17.5539C3.8013 17.8915 3.9067 18.2298 4.0112 18.565C4.3755 19.7341 4.7283 20.8661 4.9592 21.8058C5.9804 25.9629 6.8687 28.1971 8.48 29.7712C8.8126 29.4619 9.2333 28.965 9.7899 28.2597C9.8766 28.1497 9.9666 28.0348 10.0593 27.9164C10.6295 27.1885 11.3048 26.3262 11.9937 25.6369C12.7255 24.9047 13.9352 23.8745 15.5038 23.8697C17.0796 23.8649 18.2861 24.9118 19.003 25.6389C19.6819 26.3276 20.3478 27.1901 20.9098 27.918C21.0017 28.037 21.0908 28.1524 21.1767 28.2629C21.7219 28.9638 22.1349 29.4586 22.4615 29.7681C23.1093 29.1824 23.5294 28.6934 23.8929 28.0853C24.3622 27.3003 24.7993 26.2118 25.3626 24.2931C25.372 24.2609 25.3823 24.229 25.3934 24.1973L29.3253 12.934C29.8394 11.2943 30.1005 9.797 29.9642 8.3899C29.8315 7.0193 29.3116 5.6229 28.0662 4.1789C26.0017 1.78507 23.4653 1.74886 21.0724 2.4904C19.8673 2.8638 18.7857 3.42 17.9936 3.8956C17.6964 4.074 17.4459 4.2375 17.2515 4.3701L21.0925 7.1943C21.5374 7.5215 21.6329 8.1474 21.3057 8.5923C20.9786 9.0373 20.3526 9.1328 19.9077 8.8056L14.4829 4.8168C14.4078 4.769 14.3352 4.7158 14.2657 4.6571L13.1076 3.8056C13.0267 3.7461 12.9574 3.6768 12.9001 3.6004ZM8.1293 30.0449L8.1332 30.043C8.1305 30.0443 8.1293 30.0449 8.1293 30.0449Z"
+                  fill="bcurrentColor"
+                />
+              </svg>
+            </span>
+            <h4 class="service-title | text-lg mt-5">Reveal clear aligners</h4>
+          </div>
+
+          <div class="service-card | flex flex-col items-center">
+            <span
+              class="icon | bg-[#268ccc] flex items-center justify-center h-24 w-24 lg:h-40 lg:w-40 aspect-square rounded-full"
+            >
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.5592 3.1258C15.7585 2.9692 24.0804 -3.50485 29.5808 2.8727C32.6004 6.3739 32.3444 10.0063 31.2239 13.5635L27.2816 24.8565C26.1289 28.783 25.307 29.9951 23.2874 31.701C22.0886 32.7135 20.7366 30.9646 19.3138 29.1239C18.0812 27.5293 16.7954 25.8658 15.5098 25.8697C14.203 25.8737 12.8965 27.5398 11.6465 29.1338C10.2048 30.9724 8.8383 32.715 7.6331 31.701C5.1996 29.6532 4.1324 26.8237 3.0169 22.2829C2.8022 21.4087 2.4755 20.3602 2.1153 19.2039C0.604448 14.3544 -1.49722 7.6083 1.58534 3.8657C5.3919 -0.755813 10.12 -1.49979 15.5088 3.0887L15.5592 3.1258ZM12.9001 3.6004C11.0357 2.3193 9.4509 1.91183 8.1308 2.0157C6.5088 2.1432 4.8241 3.0794 3.1291 5.1373C1.85439 6.6849 1.72465 9.2994 2.4119 12.7151C2.7392 14.3418 3.2167 15.9892 3.6976 17.5539C3.8013 17.8915 3.9067 18.2298 4.0112 18.565C4.3755 19.7341 4.7283 20.8661 4.9592 21.8058C5.9804 25.9629 6.8687 28.1971 8.48 29.7712C8.8126 29.4619 9.2333 28.965 9.7899 28.2597C9.8766 28.1497 9.9666 28.0348 10.0593 27.9164C10.6295 27.1885 11.3048 26.3262 11.9937 25.6369C12.7255 24.9047 13.9352 23.8745 15.5038 23.8697C17.0796 23.8649 18.2861 24.9118 19.003 25.6389C19.6819 26.3276 20.3478 27.1901 20.9098 27.918C21.0017 28.037 21.0908 28.1524 21.1767 28.2629C21.7219 28.9638 22.1349 29.4586 22.4615 29.7681C23.1093 29.1824 23.5294 28.6934 23.8929 28.0853C24.3622 27.3003 24.7993 26.2118 25.3626 24.2931C25.372 24.2609 25.3823 24.229 25.3934 24.1973L29.3253 12.934C29.8394 11.2943 30.1005 9.797 29.9642 8.3899C29.8315 7.0193 29.3116 5.6229 28.0662 4.1789C26.0017 1.78507 23.4653 1.74886 21.0724 2.4904C19.8673 2.8638 18.7857 3.42 17.9936 3.8956C17.6964 4.074 17.4459 4.2375 17.2515 4.3701L21.0925 7.1943C21.5374 7.5215 21.6329 8.1474 21.3057 8.5923C20.9786 9.0373 20.3526 9.1328 19.9077 8.8056L14.4829 4.8168C14.4078 4.769 14.3352 4.7158 14.2657 4.6571L13.1076 3.8056C13.0267 3.7461 12.9574 3.6768 12.9001 3.6004ZM8.1293 30.0449L8.1332 30.043C8.1305 30.0443 8.1293 30.0449 8.1293 30.0449Z"
+                  fill="bcurrentColor"
+                />
+              </svg>
+            </span>
+            <h4 class="service-title | text-lg mt-5">
+              Porcelain dental veneers
+            </h4>
+          </div>
+
+          <div class="service-card | flex flex-col items-center">
+            <span
+              class="icon | bg-[#268ccc] flex items-center justify-center h-24 w-24 lg:h-40 lg:w-40 aspect-square rounded-full"
+            >
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.5592 3.1258C15.7585 2.9692 24.0804 -3.50485 29.5808 2.8727C32.6004 6.3739 32.3444 10.0063 31.2239 13.5635L27.2816 24.8565C26.1289 28.783 25.307 29.9951 23.2874 31.701C22.0886 32.7135 20.7366 30.9646 19.3138 29.1239C18.0812 27.5293 16.7954 25.8658 15.5098 25.8697C14.203 25.8737 12.8965 27.5398 11.6465 29.1338C10.2048 30.9724 8.8383 32.715 7.6331 31.701C5.1996 29.6532 4.1324 26.8237 3.0169 22.2829C2.8022 21.4087 2.4755 20.3602 2.1153 19.2039C0.604448 14.3544 -1.49722 7.6083 1.58534 3.8657C5.3919 -0.755813 10.12 -1.49979 15.5088 3.0887L15.5592 3.1258ZM12.9001 3.6004C11.0357 2.3193 9.4509 1.91183 8.1308 2.0157C6.5088 2.1432 4.8241 3.0794 3.1291 5.1373C1.85439 6.6849 1.72465 9.2994 2.4119 12.7151C2.7392 14.3418 3.2167 15.9892 3.6976 17.5539C3.8013 17.8915 3.9067 18.2298 4.0112 18.565C4.3755 19.7341 4.7283 20.8661 4.9592 21.8058C5.9804 25.9629 6.8687 28.1971 8.48 29.7712C8.8126 29.4619 9.2333 28.965 9.7899 28.2597C9.8766 28.1497 9.9666 28.0348 10.0593 27.9164C10.6295 27.1885 11.3048 26.3262 11.9937 25.6369C12.7255 24.9047 13.9352 23.8745 15.5038 23.8697C17.0796 23.8649 18.2861 24.9118 19.003 25.6389C19.6819 26.3276 20.3478 27.1901 20.9098 27.918C21.0017 28.037 21.0908 28.1524 21.1767 28.2629C21.7219 28.9638 22.1349 29.4586 22.4615 29.7681C23.1093 29.1824 23.5294 28.6934 23.8929 28.0853C24.3622 27.3003 24.7993 26.2118 25.3626 24.2931C25.372 24.2609 25.3823 24.229 25.3934 24.1973L29.3253 12.934C29.8394 11.2943 30.1005 9.797 29.9642 8.3899C29.8315 7.0193 29.3116 5.6229 28.0662 4.1789C26.0017 1.78507 23.4653 1.74886 21.0724 2.4904C19.8673 2.8638 18.7857 3.42 17.9936 3.8956C17.6964 4.074 17.4459 4.2375 17.2515 4.3701L21.0925 7.1943C21.5374 7.5215 21.6329 8.1474 21.3057 8.5923C20.9786 9.0373 20.3526 9.1328 19.9077 8.8056L14.4829 4.8168C14.4078 4.769 14.3352 4.7158 14.2657 4.6571L13.1076 3.8056C13.0267 3.7461 12.9574 3.6768 12.9001 3.6004ZM8.1293 30.0449L8.1332 30.043C8.1305 30.0443 8.1293 30.0449 8.1293 30.0449Z"
+                  fill="bcurrentColor"
+                />
+              </svg>
+            </span>
+            <h4 class="service-title | text-lg mt-5">
+              Dental crown and bridge
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews -->
+    <section class="reviews | py-14 px-4 lg:px-10">
+      <div class="container mx-auto">
+        <h3 class="header | text-xl lg:text-3xl text-center uppercase mb-6">
+          Our reviews
+        </h3>
+
+        <div
+          class="review-badge | bg-[#268ccc] text-white p-4 rounded max-w-md mx-auto flex gap-4 lg:gap-10 mb-4 lg:mb-6"
+        >
+          <div
+            class="image-wrapper | h-20 w-20 aspect-square rounded-full border-2 border-white overflow-hidden"
+          >
+            <img
+              src="src/assests/2.png"
+              alt="Image of doctor"
+              loading="lazy"
+              class="h-full w-full object-cover"
+            />
+          </div>
+
+          <div class="content">
+            <h5>J WHITLEY WILLS, DDS</h5>
+
+            <div
+              class="review-stars | flex items-center text-yellow-500 mt-2.5"
+            >
+              <span class="mr-1">5.0</span>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                <path
+                  fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                <path
+                  fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                <path
+                  fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                <path
+                  fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                <path
+                  fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <span class="block text-sm"> Based on 6 reviews </span>
+          </div>
+        </div>
+
+        <section class="splide | max-w-6xl mx-auto">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <article
+                  class="review-card | bg-[#268ccc] text-white p-4 pl-11 rounded"
+                >
+                  <p class="review-text | relative">
+                    <span class="review-stars | text-yellow-500">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quisquam enim tempora quibusdam dignissimos, sint facilis!
+                    Illum, consequatur maiores. Distinctio.
+                  </p>
+                </article>
+
+                <div class="user-info | flex gap-4 items-center mt-4">
+                  <span
+                    class="user-avatar h-10 w-10 lg:h-14 lg:w-14 aspect-square rounded-full bg-pink-700 text-white flex items-center justify-center"
+                    >V</span
+                  >
+
+                  <div class="user-data text-sm">
+                    <span class="blocl font-semibold">V. C.</span>
+                    <span class="block">1 month ago</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <article
+                  class="review-card | bg-[#268ccc] text-white p-4 pl-11 rounded"
+                >
+                  <p class="review-text | relative">
+                    <span class="review-stars | text-yellow-500">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quisquam enim tempora quibusdam dignissimos, sint facilis!
+                    Illum, consequatur maiores. Distinctio.
+                  </p>
+                </article>
+
+                <div class="user-info | flex gap-4 items-center mt-4">
+                  <span
+                    class="user-avatar h-10 w-10 lg:h-14 lg:w-14 aspect-square rounded-full bg-blue-700 text-white flex items-center justify-center"
+                    >R</span
+                  >
+
+                  <div class="user-data text-sm">
+                    <span class="blocl font-semibold">Rebecca J</span>
+                    <span class="block">2 months ago</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <article
+                  class="review-card | bg-[#268ccc] text-white p-4 pl-11 rounded"
+                >
+                  <p class="review-text | relative">
+                    <span class="review-stars | text-yellow-500">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quisquam enim tempora quibusdam dignissimos, sint facilis!
+                    Illum, consequatur maiores. Distinctio.
+                  </p>
+                </article>
+
+                <div class="user-info | flex gap-4 items-center mt-4">
+                  <span
+                    class="user-avatar h-10 w-10 lg:h-14 lg:w-14 aspect-square rounded-full bg-lime-700 text-white flex items-center justify-center"
+                    >A</span
+                  >
+
+                  <div class="user-data text-sm">
+                    <span class="blocl font-semibold">Allison Mark</span>
+                    <span class="block">2 months ago</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <article
+                  class="review-card | bg-[#268ccc] text-white p-4 pl-11 rounded"
+                >
+                  <p class="review-text | relative">
+                    <span class="review-stars | text-yellow-500">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quisquam enim tempora quibusdam dignissimos, sint facilis!
+                    Illum, consequatur maiores. Distinctio.
+                  </p>
+                </article>
+
+                <div class="user-info | flex gap-4 items-center mt-4">
+                  <span
+                    class="user-avatar h-10 w-10 lg:h-14 lg:w-14 aspect-square rounded-full bg-red-700 text-white flex items-center justify-center"
+                    >M</span
+                  >
+
+                  <div class="user-data text-sm">
+                    <span class="blocl font-semibold">Mark Williams</span>
+                    <span class="block">3 months ago</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <button
+          class="block py-2 px-4 bg-[#444444] text-white w-fit uppercase mx-auto mt-8"
+        >
+          View all reviews
+        </button>
+      </div>
+    </section>
+
+    <section class="insurance-info | lg:pl-10">
+      <div class="container mx-auto">
+        <div class="grid gap-5 grid-col-1 lg:grid-cols-2">
+          <div class="text-wrapper | m-auto px-4">
+            <div class="text-center">
+              <h4 class="text-xl lg:text-4xl">Insurance information</h4>
+              <p class="my-4">
+                In network with delta premiere and Cigna DPPO Provider
+              </p>
+              <button class="text-xl">Apply for financing</button>
+            </div>
+          </div>
+          <div class="image-wrapper">
+            <img
+              src="src/assests/form-image.png"
+              alt="Image of form"
+              loading="lazy"
+              class="w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery | py-14 px-4 lg:px-10">
+      <div class="container mx-auto">
+        <h3 class="header | text-xl lg:text-3xl text-center uppercase mb-6">
+          Gallery
+        </h3>
+        <div
+          class="gallery-wrapper | max-w-6xl mx-auto grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+        >
+          <div class="gallery-card | rounded-md overflow-hidden h-56">
+            <img
+              src="src/assests/gallery/gal-01.png"
+              alt="gallery image"
+              class="h-full w-full object-cover"
+            />
+          </div>
+
+          <div class="gallery-card | rounded-md overflow-hidden h-56">
+            <img
+              src="src/assests/gallery/gal-02.png"
+              alt="gallery image"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div class="gallery-card | rounded-md overflow-hidden h-56">
+            <img
+              src="src/assests/gallery/gal-01.png"
+              alt="gallery image"
+              class="h-full w-full object-cover"
+            />
+          </div>
+
+          <div class="gallery-card | rounded-md overflow-hidden h-56">
+            <img
+              src="src/assests/gallery/gal-02.png"
+              alt="gallery image"
+              class="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer | py-14 px-4 lg:px-16 bg-[#268ccc] text-white">
+      <div class="container mx-auto">
+        <ul class="flex gap-4 lg:gap-6 flex-col lg:flex-row">
+          <li class="map | lg:flex-[1.5]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6525.6732778165915!2d-90.001868!3d35.13575!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d57e02faea552d%3A0x5df1eff0f09a5467!2sDr.%20J.%20Whitley%20Wills!5e0!3m2!1sen!2sus!4v1700153588533!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Office location"
+            ></iframe>
+          </li>
+          <li
+            class="Navigation-links lg:flex-[3] grid grid-cols-1 lg:grid-cols-2"
+          >
+            <div class="time">
+              <h5 class="text-center text-lg">
+                <p>J WHITLEY WILLS, DDS</p>
+                <p>Office hours</p>
+              </h5>
+
+              <ul class="mt-5 text-sm">
+                <li class="flex justify-between">
+                  <span>MON</span>
+                  <span>7:20 am - 3:00 pm</span>
+                </li>
+
+                <li class="flex justify-between">
+                  <span>TUE</span>
+                  <span>8:00 am - 12:00 pm</span>
+                </li>
+
+                <li class="flex justify-between">
+                  <span>WED -THU</span>
+                  <span>8:00 am - 5:00 pm</span>
+                </li>
+
+                <li class="flex justify-between">
+                  <span>FRI - SUN</span>
+                  <span>Closed</span>
+                </li>
+              </ul>
+
+              <h5 class="text-center text-lg mt-4">Location</h5>
+
+              <div
+                class="location-info text-sm text-center grid gap-2.5 h-fit mt-4"
+              >
+                <p>59 S Idlewild St. Memphis, TN</p>
+                <p>Phone : (901) 726-9525</p>
+                <p>Text Us : (901) 726-9525</p>
+                <p>Email : office@jwhitleywills.com</p>
+              </div>
+            </div>
+
+            <div class="navigation-link">
+              <h5 class="text-center text-lg">Navigation</h5>
+
+              <ul class="mt-4 text-sm text-center grid gap-4">
+                <li><a href="">Home</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- copyright -->
+    <section class="copyright | py-4 px-4 lg:px-16">
+      <div class="container mx-auto">
+        <ul
+          class="social-links | grid gap-4 grid-cols-1 lg:grid-cols-5 items-center"
+        >
+          <li>
+            <ul class="text-[#268ccc] flex gap-5">
+              <li>
+                <a href="">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 1792 1792"
+                    fill="currentColor"
+                  >
+                    <title>Google icon</title>
+                    <path
+                      d="M896 786h725q12 67 12 128 0 217-91 387.5t-259.5 266.5-386.5 96q-157 0-299-60.5t-245-163.5-163.5-245-60.5-299 60.5-299 163.5-245 245-163.5 299-60.5q300 0 515 201l-209 201q-123-119-306-119-129 0-238.5 65t-173.5 176.5-64 243.5 64 243.5 173.5 176.5 238.5 65q87 0 160-24t120-60 82-82 51.5-87 22.5-78h-436v-264z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 1792 1792"
+                    fill="currentColor"
+                  >
+                    <title>Facebook icon</title>
+                    <path
+                      d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 1792 1792"
+                    fill="currentColor"
+                  >
+                    <title>Twitter icon</title>
+                    <path
+                      d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 1792 1792"
+                    f
+                    fill="currentColor"
+                  >
+                    <title>YouTube icon</title>
+                    <path
+                      d="M711 1128l484-250-484-253v503zm185-862q168 0 324.5 4.5t229.5 9.5l73 4q1 0 17 1.5t23 3 23.5 4.5 28.5 8 28 13 31 19.5 29 26.5q6 6 15.5 18.5t29 58.5 26.5 101q8 64 12.5 136.5t5.5 113.5v176q1 145-18 290-7 55-25 99.5t-32 61.5l-14 17q-14 15-29 26.5t-31 19-28 12.5-28.5 8-24 4.5-23 3-16.5 1.5q-251 19-627 19-207-2-359.5-6.5t-200.5-7.5l-49-4-36-4q-36-5-54.5-10t-51-21-56.5-41q-6-6-15.5-18.5t-29-58.5-26.5-101q-8-64-12.5-136.5t-5.5-113.5v-176q-1-145 18-290 7-55 25-99.5t32-61.5l14-17q14-15 29-26.5t31-19.5 28-13 28.5-8 23.5-4.5 23-3 17-1.5q251-18 627-18z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="text-[#268ccc]">
+            <p>Copyright 2023 GrowthPlug. Inc</p>
+          </li>
+          <li class="text-[#268ccc]">
+            <a href="">Privacy Policy</a>
+          </li>
+          <li class="text-[#268ccc]">
+            <a href="">Terms and Conditions</a>
+          </li>
+          <li class="text-[#268ccc]">
+            <a href="">Accessibility Statement</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- scripts -->
+    <script src="src/js/App.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide(".splide", {
+          perPage: 3,
+          rewind: false,
+          gap: "2rem",
+          type: "loop",
+          autoHeight: true,
+          autoplay: true,
+          arrows: true,
+          pagination: true,
+          breakpoints: {
+            640: {
+              perPage: 1,
+              gap: ".7rem",
+              height: "6rem",
+            },
+          },
+        }).mount();
+      });
+    </script>
+  </body>
+</html>
